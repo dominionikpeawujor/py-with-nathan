@@ -123,3 +123,45 @@ for i in range(3):
     s += t[i][i]
 print(s)
 
+# ========= FUNCTIONS =========
+
+numbers = [1,2,3,4]
+sumation = sum(numbers)
+print("The addition of the list:",numbers, "is", sumation)
+
+# [134,34,2,1,3,5]
+# [34,134,2,1,3,5]
+# [34,2,134,1,3,5]
+# [34,2,1,134,3,5]
+# ...
+# ...
+# ...
+# [1,2,3,5,34,134]
+
+
+
+# === PARAMETER VS ARGUMENTS ===
+# This is how to create/define a custom function
+def natisapythondev(name): # name is called a parameter
+    print("Yippeee 🥳🎌", name, "is a python dev!!")
+
+# This is how we use the function
+natisapythondev("Nathan") # Excepting an argument
+natisapythondev("Dominion")
+natisapythondev("Williams")
+natisapythondev("Banky W")
+
+# POSITIONAL ARGUMENTS VS KEYWORD ARGUMENTS
+def anotherone(name="None", age=0):
+    print(name, "is the IDAN. He is", age)
+
+anotherone(30, "Nathan" ) # POSITIONAL ARGUMENTS
+anotherone(age=30, name="Nathan" ) # KEYWORD ARGUMENTS
+anotherone("Nathan")
+anotherone()
+
+# === NON-PARAMETERIZED FUNCTIONS ===
+def thenanotherone():
+    print("Just here. Don't mind me🚶🏾‍♂️")
+
+thenanotherone()
