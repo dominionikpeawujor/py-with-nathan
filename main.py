@@ -55,7 +55,7 @@
 # # ====== LIST AND TUPLES ======
 # === ADDING ITEMS TO LIST === 
 
-# 1. INSERT METHOD
+# 1. ============ INSERT METHOD ============
 # -- Takes two arguments: The position and the item to be added
 # -- Does not return anything.
 
@@ -66,7 +66,9 @@ for v in range(len(my_list)): # This will repeat 3 times (len(my_list))
     print(my_list, "INSERTED")
 
 print("======================")
-# 2. APPEND METHOD
+
+
+# 2. ========== APPEND METHOD ============
 # -- Adds an item at the end of the list
 my_list = [16, 2, 3]
 print(my_list, "ORIGINAL")
@@ -75,3 +77,18 @@ for v in range(len(my_list)): # This will repeat 3 times (len(my_list))
     print(my_list, "APPENDED")
 
 print("======================")
+
+# === REMOVING ITEMS FROM LIST === 
+# 1. del keyword -- It DOES NOT return the deleted item from the list
+
+my_list = [16, 2, 3]
+
+del my_list[0]
+print(my_list, "Deleted first item")
+
+# 2. Pop method -- It RETURNS the deleted item from the list
+my_list = [16, 2, 3]
+last_item = my_list.pop()
+print(my_list, "Popped last item")
+print(last_item, "is the last item that was popped")
+
