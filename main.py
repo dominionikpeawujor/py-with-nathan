@@ -163,3 +163,11 @@ def thenanotherone():
     print("Just here. Don't mind me🚶🏾‍♂️")
 
 thenanotherone()
+
+
+# RETURN 
+def raisedToPower(number, power):
+    return number ** power
+
+answer = raisedToPower(2,4)
+print(answer)
