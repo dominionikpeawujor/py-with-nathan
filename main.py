@@ -137,9 +137,7 @@ print("The addition of the list:",numbers, "is", sumation)
 # ...
 # ...
 # [1,2,3,5,34,134]
-
-
-
+print("============")
 # === PARAMETER VS ARGUMENTS ===
 # This is how to create/define a custom function
 def natisapythondev(name): # name is called a parameter
