@@ -138,13 +138,13 @@ print("The addition of the list:",numbers, "is", sumation)
 # ...
 # [1,2,3,5,34,134]
 print("============")
-# === PARAMETER VS ARGUMENTS ===
+# === PARAMETERS VS ARGUMENTS ===
 # This is how to create/define a custom function
-def natisapythondev(name): # name is called a parameter
+def natisapythondev(name): # 'name' is called a parameter
     print("Yippeee 🥳🎌", name, "is a python dev!!")
 
 # This is how we use the function
-natisapythondev("Nathan") # Excepting an argument
+natisapythondev("Nathan") # "Nathan" is called an argument
 natisapythondev("Dominion")
 natisapythondev("Williams")
 natisapythondev("Banky W")
@@ -153,10 +153,10 @@ natisapythondev("Banky W")
 def anotherone(name="None", age=0):
     print(name, "is the IDAN. He is", age)
 
-anotherone(30, "Nathan" ) # POSITIONAL ARGUMENTS
-anotherone(age=30, name="Nathan" ) # KEYWORD ARGUMENTS
-anotherone("Nathan")
-anotherone()
+anotherone(30, "Nathan" ) # POSITIONAL ARGUMENTS. It prints out: 30 is the IDAN. He is Nathan
+anotherone(age=30, name="Nathan" ) # KEYWORD ARGUMENTS. It prints out: Nathan is the IDAN. He is 30
+anotherone("Nathan") # It prints out: Nathan is the IDAN. He is 0
+anotherone() # It prints out: None is the IDAN. He is 0
 
 # === NON-PARAMETERIZED FUNCTIONS ===
 def thenanotherone():
