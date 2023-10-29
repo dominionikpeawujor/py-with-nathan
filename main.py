@@ -171,3 +171,40 @@ def raisedToPower(number, power):
 
 answer = raisedToPower(2,4)
 print(answer)
+
+
+# ====== MODULARITY ========
+# TASK: Write a code that receives students scores, calculatess the average and prints the average.
+
+
+def getScores():
+    # Create an empty list to store all the scores
+    scores = []
+
+    # Ask the user how many students' scores they want to calculate
+    howManyScores = int(input("How many students's scores are we looking? "))
+    
+    # Use a for loop to ask the user for EACH score and add them to the list
+    for i in range(howManyScores):
+        score = int(input(f"Enter score {i+1}: "))
+        scores.append(score)
+
+    return scores
+
+# Calculates the average of the scores and returns the answer
+def calculateAverage(scores):
+    return sum(scores)/len(scores)
+
+
+# Prints out the average and the scores
+def printAverage(scores, average):
+    print("The average of the scores:", scores,"is", average)
+
+
+print("===========================================")
+
+allTheScores = getScores()
+average = calculateAverage(allTheScores)
+printAverage(allTheScores, average)
+
+
