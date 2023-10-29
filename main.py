@@ -138,13 +138,13 @@ print("The addition of the list:",numbers, "is", sumation)
 # ...
 # [1,2,3,5,34,134]
 print("============")
-# === PARAMETER VS ARGUMENTS ===
+# === PARAMETERS VS ARGUMENTS ===
 # This is how to create/define a custom function
-def natisapythondev(name): # name is called a parameter
+def natisapythondev(name): # 'name' is called a parameter
     print("Yippeee 🥳🎌", name, "is a python dev!!")
 
 # This is how we use the function
-natisapythondev("Nathan") # Excepting an argument
+natisapythondev("Nathan") # "Nathan" is called an argument
 natisapythondev("Dominion")
 natisapythondev("Williams")
 natisapythondev("Banky W")
@@ -153,10 +153,10 @@ natisapythondev("Banky W")
 def anotherone(name="None", age=0):
     print(name, "is the IDAN. He is", age)
 
-anotherone(30, "Nathan" ) # POSITIONAL ARGUMENTS
-anotherone(age=30, name="Nathan" ) # KEYWORD ARGUMENTS
-anotherone("Nathan")
-anotherone()
+anotherone(30, "Nathan" ) # POSITIONAL ARGUMENTS. It prints out: 30 is the IDAN. He is Nathan
+anotherone(age=30, name="Nathan" ) # KEYWORD ARGUMENTS. It prints out: Nathan is the IDAN. He is 30
+anotherone("Nathan") # It prints out: Nathan is the IDAN. He is 0
+anotherone() # It prints out: None is the IDAN. He is 0
 
 # === NON-PARAMETERIZED FUNCTIONS ===
 def thenanotherone():
@@ -171,40 +171,3 @@ def raisedToPower(number, power):
 
 answer = raisedToPower(2,4)
 print(answer)
-
-
-# ====== MODULARITY ========
-# TASK: Write a code that receives students scores, calculatess the average and prints the average.
-
-
-def getScores():
-    # Create an empty list to store all the scores
-    scores = []
-
-    # Ask the user how many students' scores they want to calculate
-    howManyScores = int(input("How many students's scores are we looking? "))
-    
-    # Use a for loop to ask the user for EACH score and add them to the list
-    for i in range(howManyScores):
-        score = int(input(f"Enter score {i+1}: "))
-        scores.append(score)
-
-    return scores
-
-# Calculates the average of the scores and returns the answer
-def calculateAverage(scores):
-    return sum(scores)/len(scores)
-
-
-# Prints out the average and the scores
-def printAverage(scores, average):
-    print("The average of the scores:", scores,"is", average)
-
-
-print("===========================================")
-
-allTheScores = getScores()
-average = calculateAverage(allTheScores)
-printAverage(allTheScores, average)
-
-
