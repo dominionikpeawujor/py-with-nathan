@@ -208,3 +208,41 @@ average = calculateAverage(allTheScores)
 printAverage(allTheScores, average)
 
 
+# TUPLES AND DICTIONARIES
+print("=======================================")
+array = []
+print(type(array))
+tuple_1 = 1,
+print(type(tuple_1))
+
+t1 = (1,)
+t2= (2,)
+t3 =(3,)
+
+t1, t2, t3 = t2, t3, t1
+print(t1,t2,t3)
+
+
+# DICTIONARY
+dict_new = {
+        "name":"Nathan", 
+        "age": 30, 
+        "favourite_foods": ["apple", "semo", "amala", "cake"]
+    }
+
+print("name:",dict_new["name"])
+print("age:",dict_new["age"])
+print("Favourite foods:", dict_new["favourite_foods"])
+
+
+# =================== EXCEPTIONS - TRY/EXCEPT BRANCH ===================
+print("=======================================")
+try:
+    age = int(input("Enter an integer: "))
+    dict_new['age'] = age
+    print(1/0)
+except ValueError:
+    print("That is not an integer😢")
+except ZeroDivisionError :
+    print("Bad code!")
+
